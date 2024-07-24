@@ -21,6 +21,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
 }
 
 body{
@@ -28,25 +29,22 @@ body{
     color: #ffffff;
 }
 
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/joystick.png);
-    filter: contrast(220%) opacity(90%);
-    background-repeat: no-repeat;
-    background-size: 700px 700px;
-    background-position: right;
-}
-
 .container{
     padding: 10px 10%;
 }
 
 nav{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    padding: 0 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px -2px #000000;
 }
 
 .logo{
@@ -81,6 +79,21 @@ nav ul li a:hover::after{
     width: 120%;
 }
 
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/joystick.png);
+    filter: contrast(220%) opacity(90%);
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+    background-position: right;
+}
+
+#header-about{
+    width: 100%;
+    height: 50vh;
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -95,6 +108,23 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
+    color: #ff0000;
+}
+
+.header-text-about{
+    margin-top: 12%;
+    font-size: 30px;
+    color: #ff0000;
+}
+
+.header-text-about h1{
+    font-size: 60px;
+    margin-top: 10px;
+    color: #ffffff;
+    line-height: 100%;
+}
+
+.header-text-about h1 span{
     color: #ff0000;
 }
 
@@ -268,6 +298,12 @@ nav ul li a:hover::after{
 
 .partners-list a img{
     width: 200px;
+    padding: 0 50px;
+    transition: 0.3s;
+}
+
+.partners-list a img:hover{
+    width: 180px;
     padding: 0 50px;
 }
 
