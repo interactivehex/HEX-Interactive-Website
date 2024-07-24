@@ -82,11 +82,10 @@ nav ul li a:hover::after{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/joystick.png);
+    background-image: url(images/background.png);
     filter: contrast(220%) opacity(90%);
-    background-repeat: no-repeat;
-    background-size: 700px 700px;
-    background-position: right;
+    background-size: cover;
+    background-position: center;
 }
 
 #header-about{
@@ -285,26 +284,30 @@ nav ul li a:hover::after{
 
 /* partners */
 
-#partners{
+#partners {
     padding: 30px 0;
 }
 
-.partners-list{
+.partners-list {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.partners-list a img{
-    width: 200px;
-    padding: 0 50px;
+.partners-list a {
+    margin: 10px;
+}
+
+.partners-list a img {
+    width: 100px;
+    padding: 10px;
     transition: 0.3s;
 }
 
-.partners-list a img:hover{
-    width: 180px;
-    padding: 0 50px;
+.partners-list a img:hover {
+    transform: scale(0.9);
 }
 
 /* footer */
@@ -340,4 +343,74 @@ footer h1{
 .social-icons a:hover{
     color: #ff0000;
     transform: translateY(-3px);
+}
+
+
+
+/* resposive css for small screens */
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(images/phonebackground.png);
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    .header-text-about h1 {
+        margin-top: 55%;
+        font-size: 30px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background-color: #ff0000;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 110vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title { 
+        font-size: 40px;
+    }
+    #trailer{
+        width: 300px;
+        height: 174px;
+    }
+    .partners-list {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .partners-list a img {
+        width: 100px;
+    }
+    .partners-list a img:hover {
+        transform: scale(0.85);
+    }
 }

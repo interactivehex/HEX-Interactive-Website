@@ -11,13 +11,15 @@
     <body>
         <nav>
             <a href="home.html"><img src="images/logos/logo03.png" class="logo"></a>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#header">HOME</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#partners">PARTNERS</a></li>
                 <li><a href="about.html">ABOUT</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div id="header">
             <div class="container">
@@ -108,5 +110,6 @@
             </div>
             <p>Copyright © 2024 Marvin Mofeed | All Rights Reserved</p>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
