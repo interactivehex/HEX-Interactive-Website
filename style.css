@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -19,21 +19,21 @@
     box-shadow: 0px 0px 40px 40px #000000;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
 }
 
-body{
+body {
     background: #000000;
     color: #ffffff;
 }
 
-.container{
+.container {
     padding: 10px 10%;
 }
 
-nav{
+nav {
     position: fixed;
     z-index: 5;
     top: 0;
@@ -47,24 +47,24 @@ nav{
     box-shadow: 0 0 20px -2px #000000;
 }
 
-.logo{
+.logo {
     width: 180px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
@@ -75,11 +75,11 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 120%;
 }
 
-#header{
+#header {
     width: 100%;
     height: 100vh;
     background-image: url(images/background.png);
@@ -89,46 +89,46 @@ nav ul li a:hover::after{
     transition: background-position 0.3s ease-out;
 }
 
-#header-about{
+#header-about {
     width: 100%;
     height: 50vh;
 }
 
-.header-text{
+.header-text {
     margin-top: 20%;
     font-size: 30px;
     color: #ff0000;
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 60px;
     margin-top: 10px;
     color: #ffffff;
     line-height: 100%;
 }
 
-.header-text h1 span{
+.header-text h1 span {
     color: #ff0000;
 }
 
-.header-text-about{
+.header-text-about {
     margin-top: 12%;
     font-size: 30px;
     color: #ff0000;
 }
 
-.header-text-about h1{
+.header-text-about h1 {
     font-size: 60px;
     margin-top: 10px;
     color: #ffffff;
     line-height: 100%;
 }
 
-.header-text-about h1 span{
+.header-text-about h1 span {
     color: #ff0000;
 }
 
-.sub-title{
+.sub-title {
     font-size: 60px;
     font-weight: 100;
     color: #ff0000;
@@ -136,11 +136,11 @@ nav ul li a:hover::after{
 
 /* projects */
 
-#projects{
+#projects {
     padding: 50px 0;
 }
 
-#trailer{
+#trailer {
     width: 1000px;
     height: 580px;
     margin-top: 40px;
@@ -149,31 +149,31 @@ nav ul li a:hover::after{
     margin-right: auto;
 }
 
-.projects-list{
+.projects-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 60px;
 }
 
-.project{
+.project {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.project img{
+.project img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
-.project:hover img{
+.project:hover img {
     transform: scale(1.1);
 }
 
-.project-text{
+.project-text {
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0), #28000099);
@@ -193,22 +193,22 @@ nav ul li a:hover::after{
     text-shadow: 0px 0px 10px #000000;
 }
 
-.project-text img{
+.project-text img {
     width: 70%;
     margin-bottom: 10px;
     filter: drop-shadow(0px 0px 10px #000000);
 }
 
-.project:hover .project-text{
+.project:hover .project-text {
     height: 100%;
 }
 
-.project-text h3{
+.project-text h3 {
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.project-text a{
+.project-text a {
     margin-top: 20px;
     color: #ffffff;
     text-decoration: none;
@@ -220,7 +220,7 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -232,24 +232,24 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #ff0000;
 }
 
 /* services */
 
-#services{
+#services {
     padding: 30px 0;
 }
 
-.services-list{
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 40px;
 }
 
-.services-list div{
+.services-list div {
     background: #121212;
     padding: 40px;
     font-size: 13px;
@@ -258,24 +258,24 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div:hover{
+.services-list div:hover {
     background: #410000;
     transform: translateY(-10px);
 }
 
-.services-list div i{
+.services-list div i {
     font-size: 40px;
     color: #ff0000;
     margin-bottom: 15px;
 }
 
-.services-list div h2{
+.services-list div h2 {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.services-list div a{
+.services-list div a {
     text-decoration: none;
     color: #ff0000;
     font-size: 12px;
@@ -313,7 +313,7 @@ nav ul li a:hover::after{
 
 /* footer */
 
-footer{
+footer {
     width: 100%;
     font-size: 12px;
     text-align: center;
@@ -323,12 +323,12 @@ footer{
     margin-top: 30px;
 }
 
-footer h1{
+footer h1 {
     font-size: 18px;
     font-weight: 400;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
     font-size: 18px;
     margin-right: 15px;
@@ -337,11 +337,11 @@ footer h1{
     transition: 0.5s;
 }
 
-.social-icons{
+.social-icons {
     margin-bottom: 20px;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff0000;
     transform: translateY(-3px);
 }
