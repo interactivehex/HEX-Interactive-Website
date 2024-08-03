@@ -4,10 +4,11 @@ function parallax(e) {
     if (window.innerWidth < 600) {
         return;
     }
-    var header = document.querySelector("#header");
-    var moving_value = header.getAttribute("data-value");
-    var x = (e.clientX * moving_value) / 250;
-    var y = (e.clientY * moving_value) / 250 - 60;
+    document.querySelectorAll(".object").forEach(function(move) {
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 250;
+        var y = (e.clientY * moving_value) / 250;
 
-    header.style.backgroundPosition = x + "px " + y + "px";
+        move.style.transform = "translateX(" + x +"px) translateY(" + y + "px)";
+    });
 }
